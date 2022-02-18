@@ -65,15 +65,15 @@ header .menu li
   padding: 0 11px;
 }
 
-header .box1
-{ position:relative;
+header .box1 { 
+  /* position:relative; */
   width:400px;
   height:50px;
   margin:0 auto;
   margin-top:60px;
   border:1px solid #000;
   border-radius:21px;
-  display:block;
+  /* display:block; */
 }
 
 header .box1 .sc
@@ -84,10 +84,10 @@ header .box1 .sc
   border:0;
 }
 
-header .box1 .sc .btn
-{ position:absolute;
+header .box1 .sc .btn { 
+  /* position:absolute; */
   margin:0 auto;
-  
+  margin-top:5px;
 }
 
 nav
@@ -97,24 +97,25 @@ nav
 
 
 nav .menu2
-{ width:1100px;
+{ width:100%;
   height:40px;
   margin:0 auto;
 }
 
 nav .menu2 .mn_area1 li
-{ float:left;
+{ width:12%;
+  height:35px;
+  float:left;
   font-size:15px;
-  padding-right:68px;
-  padding-top:8px;
+  line-height:40px;
 }
 
-nav .menu2 .mn_area1 li:first-child
-{margin-left:-10px;
-}
+/* nav .menu2 .mn_area1 li:first-child {
+  margin-left:-10px;
+} */
 
-nav .menu2 .mn_area1 li:last-child
-{ padding:2px;}
+/* nav .menu2 .mn_area1 li:last-child
+{ padding:2px;} */
 
 nav .menu2 .mn_area1 li a
 { display:block;
@@ -145,6 +146,7 @@ main .inner .i_img > div
 { 
   float:left;
   width:31.3333%;
+  margin:1%;
   
 }
 
@@ -154,19 +156,41 @@ footer
   overflow:hidden;
 }
 
-footer .menu
-{ height:48px;
-  background:lightgray;
+/* nav .menu2
+{ width:100%;
+  height:40px;
   margin:0 auto;
 }
 
+nav .menu2 .mn_area1 li
+{ width:12%;
+  height:35px;
+  float:left;
+  font-size:15px;
+  line-height:40px;
+} 
+nav .menu2 .mn_area1 li a
+{ display:block;
+  font-weight:bold;
+  text-align:center;
+  color:white;
+}*/
+footer .menu
+{ width:100%;
+  height:48px;
+  background:lightgray;
+  margin:0 auto;
+  overflow:hidden;
+}
+
 footer .menu .menu1 li
-{ float:left;}
+{ float:left;
+  width:13%;
+  font-size:14px;
+}
 
 footer .menu .menu1 li a { 
-  padding:0 20px;
   line-height:48px;
-  font-size:14px;
   color:#666;
 }
 
@@ -205,5 +229,29 @@ footer .box3 .customer
 
 @media (max-width:2000px)
   { #wrap
+    { width:100%;}
+    header
+    { width:99.5%;}
+    div.menu2
+    { width:100%;}
+  }
+
+@media (max-width:1150px)
+  { main .inner .i_img > div
+    { width:40%;}
+    main .inner .i_img > div:nth-child(3n)
+    { display:none;}  
+    
+  }
+
+@media (max-width:850px)
+  { 
+    main .inner .i_img > div
+    { width:30%;}
+    main .inner .i_img > div:nth-child(3n)
+    { display:block;}  
+    /* div.menu
+    { width:100%;} */
+    footer
     { width:100%;}
   }
